@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>연락처 · AI Society Research Lab</title>
+  <meta name="description" content="AI 기반 사회와 디지털 인프라를 연구하는 비영리 1인 연구소 웹사이트입니다.">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-container">
+    <div class="logo">
+      <a href="index.html" aria-label="홈으로 이동">
+        <img src="assets/logo.svg" alt="AI Society Research Lab 로고" />
+      </a>
+      <div class="logo-text">
+        <span>AI SOCIETY LAB</span>
+        <span>Non-profit · Independent Research</span>
+      </div>
+    </div>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="메뉴 열기">
+        ☰
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" >홈</a></li>
+        <li><a href="about.html" >연구소 소개</a></li>
+        <li><a href="research.html" >연구 &amp; 출판</a></li>
+        <li><a href="projects.html" >프로젝트</a></li>
+        <li><a href="contact.html" active>연락처</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container section-inner fade-in-up">
+      <div class="breadcrumb">
+        <a href="index.html">홈</a> · 연락처
+      </div>
+      <h1>연락처 &amp; 협업</h1>
+      <div class="subtle-divider"></div>
+      <p class="section-lead">
+        공동 연구, 자문, 발표 요청, 데이터·코드 공유 제안 등은 이메일 또는 GitHub를 통해 연락 주시면 됩니다.
+        AI Society Research Lab은 비영리 1인 연구소로, 상업적 이해관계와는 독립적으로 운영됩니다.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container section-inner fade-in-up">
+      <div class="grid two-columns">
+        <div class="card soft">
+          <h3>연락 정보</h3>
+          <ul class="contact-list">
+            <li><strong>연구소명</strong> AI Society Research Lab</li>
+            <li><strong>이메일</strong> <span>contact@ailawsociety.org</span></li>
+            <li>
+              <strong>GitHub</strong>
+              <a href="https://github.com/ailawsociety" target="_blank" rel="noopener">
+                github.com/ailawsociety
+              </a>
+            </li>
+            <li><strong>위치</strong> Seoul, Republic of Korea</li>
+          </ul>
+        </div>
+        <div class="card soft delay-1">
+          <h3>협업 / 제안</h3>
+          <p>
+            아래와 같은 제안을 특히 환영합니다:
+          </p>
+          <ul class="bullet-list">
+            <li>AI 기반 사회 변화, 사용자 행동, 인프라 수요에 대한 공동 연구</li>
+            <li>AI 안전성·사회적 영향·인프라 관련 연구 결과에 대한 세미나·강연 요청</li>
+            <li>AI 인프라(NAND·HDD·GPU) 및 반도체 수요 연구 협력</li>
+            <li>재난·공공 부문에서의 AI 활용 시나리오 공동 기획</li>
+          </ul>
+          <p class="small" style="margin-top:0.8rem;">
+            위 이메일과 GitHub 계정은 예시입니다. 실제 운용 시에는 본인이 관리하는
+            연락 채널로 교체해 사용하시기를 권장합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>
+      © <span id="year"></span> AI Society Research Lab. All rights reserved.
+    </p>
+    <p class="small">
+      비영리 1인 연구소 · Built with HTML &amp; CSS · Hosted on GitHub Pages.
+    </p>
+  </div>
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  const navToggle = document.querySelector(".nav-toggle");
+  const navLinks = document.querySelector(".nav-links");
+  if (navToggle) {
+    navToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("nav-open");
+    });
+  }
+</script>
+
+</body>
+</html>

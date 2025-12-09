@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Society Research Lab</title>
+  <meta name="description" content="AI 기반 사회와 디지털 인프라를 연구하는 비영리 1인 연구소 웹사이트입니다.">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-container">
+    <div class="logo">
+      <a href="index.html" aria-label="홈으로 이동">
+        <img src="assets/logo.svg" alt="AI Society Research Lab 로고" />
+      </a>
+      <div class="logo-text">
+        <span>AI SOCIETY LAB</span>
+        <span>Non-profit · Independent Research</span>
+      </div>
+    </div>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="메뉴 열기">
+        ☰
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" active>홈</a></li>
+        <li><a href="about.html" >연구소 소개</a></li>
+        <li><a href="research.html" >연구 &amp; 출판</a></li>
+        <li><a href="projects.html" >프로젝트</a></li>
+        <li><a href="contact.html" >연락처</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner fade-in-up">
+      <div class="hero-text">
+        <p class="hero-kicker">Non-Profit · AI · Society</p>
+        <h1>AI 기반 사회와 디지털 인프라를<br />장기 시계에서 연구합니다.</h1>
+        <p class="hero-subtitle">
+          AI Society Research Lab은 생성형 AI가
+          <strong>사회와 디지털 인프라</strong>에 미치는 영향을 분석하고,
+          공익 관점의 리포트와 워킹페이퍼를 발행하는 비영리 1인 연구소입니다.
+        </p>
+        <div class="hero-actions">
+          <a href="research.html" class="btn primary">연구 &amp; 리포트 보기</a>
+          <a href="about.html" class="btn ghost">연구소 소개</a>
+        </div>
+        <div class="hero-meta">
+          <span class="pill">AI 안전성 &amp; 자살 리스크</span>
+                    <span class="pill">NAND·HDD·GPU 인프라</span>
+        </div>
+      </div>
+      <div class="hero-panel float-up">
+        <div class="hero-card">
+          <h2>최근 이슈 브리프 (샘플)</h2>
+          <ul class="brief-list">
+            <li>
+              <span class="tag">Issue Brief 2025-01</span>
+              <p>챗봇과 자살 유도 리스크: 서비스 설계 상의 안전 공백</p>
+            </li>
+            <li>
+              <span class="tag">Working Paper</span>
+              <p>AI 모델 규모·데이터 보존 정책이 인프라 수요에 미치는 영향</p>
+            </li>
+          </ul>
+          <p class="hero-note">
+            실제 리포트가 준비되면 제목과 내용을 교체하고<br />
+            PDF 또는 GitHub 리포지토리 링크를 연결하세요.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span class="scroll-dot"></span>
+      <span class="scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container section-inner fade-in-up">
+      <h2 class="section-title">연구소 한눈에 보기</h2>
+      <p class="section-lead">
+        AI Society Research Lab은 AI 기술이 만들어내는 사회적 영향과 디지털 인프라,
+        그리고 이를 지탱하는 디지털 인프라(NAND, HDD, GPU 등)를 한 프레임 안에서 바라보는
+        <strong>비영리 독립 연구소</strong>입니다.
+      </p>
+      <div class="grid three-columns">
+        <div class="card hover-raise">
+          <div class="card-badge">01</div>
+          <h3>AI 사회적 위험 &amp; 안전성</h3>
+          <p>
+            자살 유도, 조작, 중독, 허위정보 등 생성형 AI 서비스가 초래하는
+            사회·개인 위험을 사례와 정량 지표로 분석합니다.
+          </p>
+        </div>
+        <div class="card hover-raise delay-1">
+          <div class="card-badge">02</div>
+          <h3>AI 사회적 위험 &amp; 인프라 변화</h3>
+          <p>
+            모델 크기, 학습 빈도, 데이터 보존 정책에 따른 인프라 수요와 사회적 영향을 연구합니다.
+          </p>
+        </div>
+        <div class="card hover-raise delay-2">
+          <div class="card-badge">03</div>
+          <h3>디지털 인프라 &amp; 경제 영향</h3>
+          <p>
+            AI가 NAND, DRAM, HDD, GPU 등 인프라 수요와 반도체·클라우드 산업,
+            비용 구조에 미치는 영향을 장기 시계에서 분석합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>
+      © <span id="year"></span> AI Society Research Lab. All rights reserved.
+    </p>
+    <p class="small">
+      비영리 1인 연구소 · Built with HTML &amp; CSS · Hosted on GitHub Pages.
+    </p>
+  </div>
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  const navToggle = document.querySelector(".nav-toggle");
+  const navLinks = document.querySelector(".nav-links");
+  if (navToggle) {
+    navToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("nav-open");
+    });
+  }
+</script>
+
+</body>
+</html>

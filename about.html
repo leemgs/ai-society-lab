@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>연구소 소개 · AI Society Research Lab</title>
+  <meta name="description" content="AI 기반 사회와 디지털 인프라를 연구하는 비영리 1인 연구소 웹사이트입니다.">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-container">
+    <div class="logo">
+      <a href="index.html" aria-label="홈으로 이동">
+        <img src="assets/logo.svg" alt="AI Society Research Lab 로고" />
+      </a>
+      <div class="logo-text">
+        <span>AI SOCIETY LAB</span>
+        <span>Non-profit · Independent Research</span>
+      </div>
+    </div>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="메뉴 열기">
+        ☰
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" >홈</a></li>
+        <li><a href="about.html" active>연구소 소개</a></li>
+        <li><a href="research.html" >연구 &amp; 출판</a></li>
+        <li><a href="projects.html" >프로젝트</a></li>
+        <li><a href="contact.html" >연락처</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container section-inner fade-in-up">
+      <div class="breadcrumb">
+        <a href="index.html">홈</a> · 연구소 소개
+      </div>
+      <h1>연구소 소개</h1>
+      <div class="subtle-divider"></div>
+      <p class="section-lead">
+        AI Society Research Lab은 인공지능 기술이 만들어내는 사회·경제·인프라 변화를
+        <strong>공익, 장기 시계, 증거 기반</strong> 관점에서 연구하는 비영리 1인 연구소입니다.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container section-inner fade-in-up">
+      <div class="grid two-columns">
+        <div class="card soft">
+          <h3>미션(Mission)</h3>
+          <p>
+            AI가 가져오는 혜택과 위험을 동시에 분석하여,
+            <strong>사람과 사회가 안전하게 AI를 사용할 수 있는 조건</strong>을 규명하고,
+            정책·인프라 설계에 기여하는 것입니다.
+          </p>
+          <ul class="check-list">
+            <li>AI로 인한 사회적 위험·피해에 대한 구조적 분석</li>
+            <li>글로벌 AI 활용 사례 및 사회적 영향 정리</li>
+            <li>NAND·HDD·GPU 등 인프라 수요 변화 연구</li>
+            <li>오픈 리포트 및 워킹페이퍼 공개</li>
+          </ul>
+        </div>
+        <div class="card soft delay-1">
+          <h3>연구 철학(Values)</h3>
+          <ul class="bullet-list">
+            <li><strong>공익성</strong>: 상업적 이해관계와 거리를 둔 독립 연구</li>
+            <li><strong>투명성</strong>: 방법·데이터·코드를 가능한 범위에서 공개</li>
+            <li><strong>재현성</strong>: 분석 절차를 문서화하고 다시 실행 가능하게 설계</li>
+            <li><strong>접근성</strong>: 정책 담당자·기술자·시민이 함께 이해할 수 있는 언어 사용</li>
+          </ul>
+          <p class="small" style="margin-top:0.8rem;">
+            이 연구소에서 생산되는 모든 견해는 연구자의 개인적인 관점이며,
+            별도 명시가 없는 한 어떤 기관이나 기업의 공식 입장이 아닙니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>
+      © <span id="year"></span> AI Society Research Lab. All rights reserved.
+    </p>
+    <p class="small">
+      비영리 1인 연구소 · Built with HTML &amp; CSS · Hosted on GitHub Pages.
+    </p>
+  </div>
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  const navToggle = document.querySelector(".nav-toggle");
+  const navLinks = document.querySelector(".nav-links");
+  if (navToggle) {
+    navToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("nav-open");
+    });
+  }
+</script>
+
+</body>
+</html>
