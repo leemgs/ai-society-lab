@@ -4,10 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>프로젝트 · AI Society Research Lab</title>
-  <meta name="description" content="AI 기반 사회와 디지털 인프라를 연구하는 비영리 1인 연구소 웹사이트입니다.">
+  <meta name="description" content="AI가 사회와 디지털 인프라에 미치는 장기적 영향을 다루는 오픈 프로젝트와 도구를 소개합니다." />
+  <meta name="theme-color" content="#020617" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="프로젝트 · AI Society Research Lab" />
+  <meta property="og:description" content="AI와 사회·인프라를 다루는 오픈 프로젝트와 도구." />
+  <meta property="og:url" content="https://leemgs.github.io/ai-society-lab/projects.html" />
+  <meta property="og:image" content="https://leemgs.github.io/ai-society-lab/assets/logo.svg" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
 <header class="site-header">
   <div class="container nav-container">
     <div class="logo">
@@ -19,112 +27,126 @@
         <span>Non-profit · Independent Research</span>
       </div>
     </div>
-    <nav class="nav">
-      <button class="nav-toggle" aria-label="메뉴 열기">
-        ☰
-      </button>
+    <nav class="nav" aria-label="주요 메뉴">
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
       <ul class="nav-links">
-        <li><a href="index.html" >홈</a></li>
-        <li><a href="about.html" >연구소 소개</a></li>
-        <li><a href="research.html" >연구 &amp; 출판</a></li>
-        <li><a href="projects.html" active>프로젝트</a></li>
-        <li><a href="contact.html" >연락처</a></li>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="about.html">소개</a></li>
+        <li><a href="vision.html">비전</a></li>
+        <li><a href="research.html">연구 &amp; 출판</a></li>
+        <li><a href="projects.html" class="active">프로젝트</a></li>
+        <li><a href="contact.html">연락처</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main>
+<main id="main">
   <section class="page-hero">
     <div class="container section-inner fade-in-up">
-      <div class="breadcrumb">
-        <a href="index.html">홈</a> · 프로젝트
-      </div>
+      <div class="breadcrumb"><a href="index.html">홈</a> · 프로젝트</div>
+      <p class="eyebrow">Projects</p>
       <h1>프로젝트</h1>
       <div class="subtle-divider"></div>
       <p class="section-lead">
-        코드는 가능한 범위에서 GitHub에 공개하고, 재현 가능한 리포지토리 구조를 유지하는 것을 목표로 합니다.
-        아래 프로젝트들은 AI가 사회와 디지털 인프라에 미치는 장기적 영향을 반영한 예시입니다.
+        코드는 가능한 범위에서 GitHub에 공개하고, 재현 가능한 저장소 구조를 유지하는 것을 목표로 합니다.
+        아래는 AI가 사회와 디지털 인프라에 미치는 장기적 영향을 다루는 프로젝트들입니다.
       </p>
     </div>
   </section>
 
   <section class="section section-alt">
-    <div class="container section-inner fade-in-up">
+    <div class="container section-inner reveal">
       <div class="grid two-columns">
         <div class="card hover-raise">
           <h3>AI 위험 사례 데이터베이스</h3>
           <p>
-            다양한 AI 관련 위험 사례와 이슈를 지속적으로 모니터링하고,
-            사건별 메타데이터·타임라인을 정리하는 오픈 아카이브를 설계합니다.
-            GitHub Actions와 간단한 크롤러, 자동 요약을 활용한
-            <strong>위험 유형 정리 연구 지원</strong>를 지향합니다.
+            자살 유도, 위험 조언, 프롬프트 인젝션, 허위정보 증폭 등 AI 시스템으로 인해 발생한
+            위험·사고·논란 사례를 카테고리별로 정리하고, 위험 유형·맥락·완화 조치를 메타데이터로 구조화합니다.
           </p>
           <p class="card-meta">
-            상태: 설계/개발 중<br />
-            Repository: 추후 공개 예정
+            상태: 설계 / 개발 중<br />
+            라이선스: CC BY-SA 등 공용 라이선스 검토
           </p>
         </div>
         <div class="card hover-raise delay-1">
-          <h3>AI 위험 사례 데이터베이스</h3>
+          <h3>온디바이스 AI 관측 &amp; 벤치마크</h3>
           <p>
-            자살 유도, 위험 조언, 프롬프트 인젝션, 허위정보 증폭 등
-            AI 시스템으로 인해 발생한 위험·사고·논란 사례를 카테고리별로 정리하고,
-            위험 유형·맥락·완화 조치를 메타데이터로 구조화합니다.
+            엣지·온디바이스 환경에서 모델의 성능·지연·에너지·프라이버시 특성을 측정하는 관측 도구를 설계합니다.
+            NNStreamer 등 온디바이스 AI 스택 경험을 사회적 지속가능성 지표와 연결합니다.
           </p>
           <p class="card-meta">
             상태: 기획 단계<br />
-            라이선스: CC BY-SA 등 공용 라이선스 검토
+            목표: 지속가능한 AI를 위한 공개 벤치마크
           </p>
         </div>
         <div class="card hover-raise delay-2">
           <h3>LLM 스택과 NAND·HDD 수요 시뮬레이션</h3>
           <p>
-            모델 크기, 학습 주기, 데이터 보존 기간, 추론 트래픽 등의 파라미터를 바꿔가며
-            NAND·HDD·GPU 메모리 수요를 시나리오별로 추정하는 간단한 시뮬레이션 도구를 설계합니다.
+            모델 크기, 학습 주기, 데이터 보존 기간, 추론 트래픽 등 파라미터를 바꿔가며
+            NAND·HDD·GPU 메모리 수요를 시나리오별로 추정하는 시뮬레이션 도구를 설계합니다.
           </p>
           <p class="card-meta">
             상태: 아이디어 단계<br />
-            목표: 반도체/인프라 연구자와 정책 담당자를 위한 공용 시나리오 도구
+            목표: 반도체·인프라 연구자와 정책 담당자를 위한 공용 시나리오 도구
           </p>
         </div>
         <div class="card hover-raise delay-2">
           <h3>재난·공공 부문의 AI 시나리오 연구</h3>
           <p>
-            Climate RADAR와 유사한 개념의 “행동 중심 조기경보 시스템” 아이디어를 발전시켜,
-            공공 영역에서 AI가 재난 커뮤니케이션·의사결정 지원에 어떻게 기여할 수 있는지
-            시나리오를 설계합니다.
+            “행동 중심 조기경보 시스템” 개념을 발전시켜, 공공 영역에서 AI가 재난 커뮤니케이션·의사결정
+            지원에 어떻게 기여할 수 있는지 시나리오를 설계합니다.
           </p>
           <p class="card-meta">
-            상태: 아이디어/문헌 정리 단계<br />
+            상태: 아이디어 / 문헌 정리 단계<br />
             산출물: 워킹페이퍼, 개념도, 정책 제안서 초안
           </p>
         </div>
       </div>
+
+      <p class="small" style="margin-top:1.6rem;">
+        각 프로젝트의 저장소는 준비되는 대로
+        <a class="pub-link" href="https://github.com/leemgs" target="_blank" rel="noopener">GitHub(@leemgs)</a>를 통해 공개됩니다.
+      </p>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <p>
-      © <span id="year"></span> AI Society Research Lab. All rights reserved.
-    </p>
-    <p class="small">
-      비영리 1인 연구소 · Built with HTML &amp; CSS · Hosted on GitHub Pages.
-    </p>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="assets/logo.svg" alt="AI Society Research Lab 로고" style="height:30px;" />
+        </div>
+        <p>
+          인간과 AI가 공존하는 미래 사회의 조건을 연구하는 비영리 독립 연구소.
+          모든 견해는 연구자 개인의 것이며 특정 기관·기업의 공식 입장이 아닙니다.
+        </p>
+      </div>
+      <div>
+        <h4>둘러보기</h4>
+        <a href="about.html">소개</a>
+        <a href="vision.html">비전</a>
+        <a href="research.html">연구 &amp; 출판</a>
+        <a href="projects.html">프로젝트</a>
+      </div>
+      <div>
+        <h4>연결</h4>
+        <a href="contact.html">연락처</a>
+        <a href="https://github.com/leemgs" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/leemgs/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://huggingface.co/leemgs" target="_blank" rel="noopener">Hugging Face</a>
+      </div>
+    </div>
+    <div class="footer-inner">
+      <p>© <span id="year"></span> AI Society Research Lab. All rights reserved.</p>
+      <p class="small">비영리 독립 연구소 · Built with HTML &amp; CSS · Hosted on GitHub Pages.</p>
+    </div>
   </div>
 </footer>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-  const navToggle = document.querySelector(".nav-toggle");
-  const navLinks = document.querySelector(".nav-links");
-  if (navToggle) {
-    navToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("nav-open");
-    });
-  }
-</script>
 
+<button class="to-top" aria-label="맨 위로 이동">↑</button>
+<script src="assets/main.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://leemgs.github.io/ai-society-lab/sitemap.xml

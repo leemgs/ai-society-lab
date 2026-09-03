@@ -3,11 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>연구소 소개 · AI Society Research Lab</title>
-  <meta name="description" content="AI 기반 사회와 디지털 인프라를 연구하는 비영리 1인 연구소 웹사이트입니다.">
+  <title>소개 · AI Society Research Lab</title>
+  <meta name="description" content="AI Society Research Lab의 미션, 연구 철학, 운영 원칙과 창립자 임근식(Geunsik Lim) 박사를 소개합니다." />
+  <meta name="theme-color" content="#020617" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="소개 · AI Society Research Lab" />
+  <meta property="og:description" content="AI Society Research Lab의 미션, 연구 철학, 운영 원칙과 창립자를 소개합니다." />
+  <meta property="og:url" content="https://leemgs.github.io/ai-society-lab/about.html" />
+  <meta property="og:image" content="https://leemgs.github.io/ai-society-lab/assets/logo.svg" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
 <header class="site-header">
   <div class="container nav-container">
     <div class="logo">
@@ -19,41 +27,39 @@
         <span>Non-profit · Independent Research</span>
       </div>
     </div>
-    <nav class="nav">
-      <button class="nav-toggle" aria-label="메뉴 열기">
-        ☰
-      </button>
+    <nav class="nav" aria-label="주요 메뉴">
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
       <ul class="nav-links">
-        <li><a href="index.html" >홈</a></li>
-        <li><a href="about.html" active>연구소 소개</a></li>
-        <li><a href="research.html" >연구 &amp; 출판</a></li>
-        <li><a href="projects.html" >프로젝트</a></li>
-        <li><a href="contact.html" >연락처</a></li>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="about.html" class="active">소개</a></li>
+        <li><a href="vision.html">비전</a></li>
+        <li><a href="research.html">연구 &amp; 출판</a></li>
+        <li><a href="projects.html">프로젝트</a></li>
+        <li><a href="contact.html">연락처</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main>
+<main id="main">
   <section class="page-hero">
     <div class="container section-inner fade-in-up">
-      <div class="breadcrumb">
-        <a href="index.html">홈</a> · 연구소 소개
-      </div>
+      <div class="breadcrumb"><a href="index.html">홈</a> · 소개</div>
+      <p class="eyebrow">About the Lab</p>
       <h1>연구소 소개</h1>
       <div class="subtle-divider"></div>
       <p class="section-lead">
         AI Society Research Lab은 인공지능 기술이 만들어내는 사회·경제·인프라 변화를
-        <strong>공익, 장기 시계, 증거 기반</strong> 관점에서 연구하는 비영리 1인 연구소입니다.
+        <strong>공익 · 장기 시계 · 증거 기반</strong> 관점에서 연구하는 비영리 독립 연구소입니다.
       </p>
     </div>
   </section>
 
   <section class="section section-alt">
-    <div class="container section-inner fade-in-up">
+    <div class="container section-inner reveal">
       <div class="grid two-columns">
         <div class="card soft">
-          <h3>미션(Mission)</h3>
+          <h3>미션 (Mission)</h3>
           <p>
             AI가 가져오는 혜택과 위험을 동시에 분석하여,
             <strong>사람과 사회가 안전하게 AI를 사용할 수 있는 조건</strong>을 규명하고,
@@ -61,22 +67,112 @@
           </p>
           <ul class="check-list">
             <li>AI로 인한 사회적 위험·피해에 대한 구조적 분석</li>
-            <li>글로벌 AI 활용 사례 및 사회적 영향 정리</li>
-            <li>NAND·HDD·GPU 등 인프라 수요 변화 연구</li>
-            <li>오픈 리포트 및 워킹페이퍼 공개</li>
+            <li>온디바이스·엣지 AI가 여는 새로운 사회적 가능성 탐구</li>
+            <li>NAND·HDD·GPU 등 디지털 인프라 수요 변화 연구</li>
+            <li>오픈 리포트·워킹페이퍼·데이터·코드 공개</li>
           </ul>
         </div>
         <div class="card soft delay-1">
-          <h3>연구 철학(Values)</h3>
+          <h3>연구 철학 (Values)</h3>
           <ul class="bullet-list">
-            <li><strong>공익성</strong>: 상업적 이해관계와 거리를 둔 독립 연구</li>
-            <li><strong>투명성</strong>: 방법·데이터·코드를 가능한 범위에서 공개</li>
-            <li><strong>재현성</strong>: 분석 절차를 문서화하고 다시 실행 가능하게 설계</li>
-            <li><strong>접근성</strong>: 정책 담당자·기술자·시민이 함께 이해할 수 있는 언어 사용</li>
+            <li><strong>공익성</strong> — 상업적 이해관계와 거리를 둔 독립 연구</li>
+            <li><strong>투명성</strong> — 방법·데이터·코드를 가능한 범위에서 공개</li>
+            <li><strong>재현성</strong> — 분석 절차를 문서화하고 다시 실행 가능하게 설계</li>
+            <li><strong>접근성</strong> — 정책 담당자·기술자·시민이 함께 이해할 언어 사용</li>
+            <li><strong>인간 중심</strong> — 기술이 아니라 사람과 사회를 기준점으로</li>
           </ul>
           <p class="small" style="margin-top:0.8rem;">
-            이 연구소에서 생산되는 모든 견해는 연구자의 개인적인 관점이며,
+            이 연구소에서 생산되는 모든 견해는 연구자의 개인적 관점이며,
             별도 명시가 없는 한 어떤 기관이나 기업의 공식 입장이 아닙니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 운영 원칙 -->
+  <section class="section">
+    <div class="container section-inner reveal">
+      <p class="eyebrow">How We Work</p>
+      <h2 class="section-title">운영 원칙</h2>
+      <p class="section-lead">
+        1인 중심의 작고 독립적인 연구소이지만, 연구의 신뢰성과 공개성을 위해
+        다음 원칙을 지킵니다.
+      </p>
+      <div class="principles">
+        <div class="principle">
+          <div>
+            <h3>증거에서 시작한다</h3>
+            <p>주장보다 사례·데이터·재현 가능한 분석을 우선합니다. 불확실성은 불확실성으로 표기합니다.</p>
+          </div>
+        </div>
+        <div class="principle">
+          <div>
+            <h3>공개를 기본값으로 한다</h3>
+            <p>가능한 범위에서 리포트·데이터·코드를 GitHub에 공개하고, 누구나 검증할 수 있게 합니다.</p>
+          </div>
+        </div>
+        <div class="principle">
+          <div>
+            <h3>이해관계를 밝힌다</h3>
+            <p>연구 자금·협력 관계 등 잠재적 이해충돌이 있다면 명시하고, 독립성을 최우선으로 지킵니다.</p>
+          </div>
+        </div>
+        <div class="principle">
+          <div>
+            <h3>사람을 먼저 생각한다</h3>
+            <p>연구 대상이 사람과 사회인 만큼, 취약한 이용자와 잠재적 피해를 항상 고려합니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 창립자 상세 -->
+  <section class="section section-alt">
+    <div class="container section-inner reveal">
+      <p class="eyebrow">Founder</p>
+      <h2 class="section-title">창립자 · 임근식 (Geunsik Lim), Ph.D.</h2>
+      <div class="founder">
+        <div class="founder-media">
+          <div class="founder-avatar" aria-hidden="true">GL</div>
+          <div class="fname">Geunsik Lim · 임근식</div>
+          <div class="frole">Founder &amp; Director</div>
+          <div class="faffil">On-Device AI &amp; Systems Researcher</div>
+          <div class="founder-links">
+            <a href="https://github.com/leemgs" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/leemgs/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://huggingface.co/leemgs" target="_blank" rel="noopener">Hugging Face</a>
+          </div>
+        </div>
+        <div class="founder-body">
+          <p>
+            임근식 박사는 임베디드 기기를 위한 시스템 소프트웨어와 온디바이스 AI를 오랜 기간 연구해 온
+            시스템 소프트웨어 엔지니어입니다. 휴대폰·태블릿·디지털 TV·프린터 등 다양한 소비자 전자기기의
+            저수준 플랫폼 소프트웨어를 개발하며, 제품 경쟁력을 높이는 시스템 기술을 다뤄 왔습니다.
+          </p>
+          <p style="margin-top:0.9rem;">
+            신경망을 스트림 파이프라인의 필터로 처리하는 온디바이스 AI 프레임워크
+            <strong>NNStreamer</strong>의 핵심 연구자로 참여했으며, 이 연구로
+            <strong>Samsung Best Paper Award (2021)</strong>를 수상했습니다.
+            또한 Linux, GCC, Glibc, Android, Tizen, GStreamer 등 폭넓은 오픈소스 생태계에 기여해 왔습니다.
+          </p>
+          <p style="margin-top:0.9rem;">
+            이러한 시스템·인프라에 대한 깊은 이해를 바탕으로, 그는 AI가 사회에 확산될 때
+            발생하는 안전성·지속가능성·공정성 문제를 기술과 사회의 접점에서 연구하기 위해
+            이 연구소를 설립했습니다.
+          </p>
+          <div class="tag-group">
+            <span class="chip">On-Device / Edge AI</span>
+            <span class="chip">NNStreamer</span>
+            <span class="chip">Embedded Systems</span>
+            <span class="chip">Linux · Tizen · GStreamer</span>
+            <span class="chip">Open Source</span>
+            <span class="chip">AI Safety &amp; Society</span>
+          </div>
+          <p class="small" style="margin-top:1rem;">
+            프로필·이력·논문·특허 등 상세 정보는
+            <a class="pub-link" href="https://leemgs.github.io/" target="_blank" rel="noopener">개인 홈페이지</a>에서 확인할 수 있습니다.
           </p>
         </div>
       </div>
@@ -85,25 +181,40 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <p>
-      © <span id="year"></span> AI Society Research Lab. All rights reserved.
-    </p>
-    <p class="small">
-      비영리 1인 연구소 · Built with HTML &amp; CSS · Hosted on GitHub Pages.
-    </p>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="assets/logo.svg" alt="AI Society Research Lab 로고" style="height:30px;" />
+        </div>
+        <p>
+          인간과 AI가 공존하는 미래 사회의 조건을 연구하는 비영리 독립 연구소.
+          모든 견해는 연구자 개인의 것이며 특정 기관·기업의 공식 입장이 아닙니다.
+        </p>
+      </div>
+      <div>
+        <h4>둘러보기</h4>
+        <a href="about.html">소개</a>
+        <a href="vision.html">비전</a>
+        <a href="research.html">연구 &amp; 출판</a>
+        <a href="projects.html">프로젝트</a>
+      </div>
+      <div>
+        <h4>연결</h4>
+        <a href="contact.html">연락처</a>
+        <a href="https://github.com/leemgs" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/leemgs/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://huggingface.co/leemgs" target="_blank" rel="noopener">Hugging Face</a>
+      </div>
+    </div>
+    <div class="footer-inner">
+      <p>© <span id="year"></span> AI Society Research Lab. All rights reserved.</p>
+      <p class="small">비영리 독립 연구소 · Built with HTML &amp; CSS · Hosted on GitHub Pages.</p>
+    </div>
   </div>
 </footer>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-  const navToggle = document.querySelector(".nav-toggle");
-  const navLinks = document.querySelector(".nav-links");
-  if (navToggle) {
-    navToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("nav-open");
-    });
-  }
-</script>
 
+<button class="to-top" aria-label="맨 위로 이동">↑</button>
+<script src="assets/main.js" defer></script>
 </body>
 </html>
