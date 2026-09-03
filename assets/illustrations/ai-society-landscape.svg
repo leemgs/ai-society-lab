@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">AI와 사회를 잇는 연구 풍경</title><desc id="desc">푸른 언덕 위 연구소와 도시, 데이터 흐름을 표현한 밝은 수채화풍 인포그래픽</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#7dddf2"/><stop offset=".65" stop-color="#dff6c7"/><stop offset="1" stop-color="#fff2b9"/></linearGradient>
+    <linearGradient id="hill" x2="1" y2="1"><stop stop-color="#78cf82"/><stop offset="1" stop-color="#2f9d77"/></linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+  <rect width="720" height="480" rx="38" fill="url(#sky)"/>
+  <g fill="#fff" opacity=".82"><ellipse cx="120" cy="93" rx="65" ry="25"/><ellipse cx="167" cy="87" rx="42" ry="31"/><ellipse cx="565" cy="113" rx="70" ry="25"/><ellipse cx="612" cy="105" rx="39" ry="29"/></g>
+  <circle cx="602" cy="75" r="38" fill="#ffe07a"/><circle cx="602" cy="75" r="52" fill="#fff2a8" opacity=".38" filter="url(#soft)"/>
+  <path d="M0 323Q105 229 226 320T465 294T720 286V480H0Z" fill="#9bd97b"/>
+  <path d="M0 375Q127 274 276 361T536 335T720 349V480H0Z" fill="url(#hill)"/>
+  <path d="M75 405C180 354 254 390 337 344S502 259 652 317" fill="none" stroke="#fff6cf" stroke-width="18" stroke-linecap="round" opacity=".9"/>
+  <g transform="translate(278 186)"><path d="M24 79 97 21l75 58v100H24Z" fill="#fff8e9" stroke="#315c67" stroke-width="6"/><path d="m12 84 85-67 86 67" fill="none" stroke="#e36f58" stroke-width="15" stroke-linecap="round"/><rect x="74" y="115" width="46" height="64" rx="5" fill="#70b8c7"/><rect x="39" y="91" width="32" height="30" rx="4" fill="#ffd36a"/><rect x="126" y="91" width="32" height="30" rx="4" fill="#ffd36a"/><circle cx="97" cy="69" r="20" fill="#78cf82"/><path d="M97 56v26M84 69h26" stroke="#fff" stroke-width="5" stroke-linecap="round"/></g>
+  <g fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-dasharray="7 12" opacity=".95"><path d="M205 148Q278 99 351 156"/><path d="M364 153Q440 91 529 155"/></g>
+  <g font-family="system-ui,sans-serif" font-weight="700" text-anchor="middle"><g transform="translate(166 142)"><circle r="47" fill="#ff8f70" stroke="#fff" stroke-width="7"/><path d="M-17 7V-8M0 7V-22M17 7V-2" stroke="#fff" stroke-width="8" stroke-linecap="round"/><text y="70" font-size="18" fill="#284552">사회 안전</text></g><g transform="translate(554 151)"><circle r="47" fill="#6e9ce8" stroke="#fff" stroke-width="7"/><path d="M-22-13h44v29h-44zM-11 25h22" stroke="#fff" stroke-width="6"/><text y="70" font-size="18" fill="#284552">디지털 인프라</text></g></g>
+  <g fill="#284552"><path d="m101 362 10-37 10 37Z"/><path d="m620 346 12-44 12 44Z"/></g>
+</svg>
