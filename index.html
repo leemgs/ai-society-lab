@@ -3,11 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Society Research Lab</title>
-  <meta name="description" content="AI 기반 사회와 디지털 인프라를 연구하는 비영리 1인 연구소 웹사이트입니다.">
+  <title>AI Society Research Lab — 미래 AI 기반 사회 연구</title>
+  <meta name="description" content="AI Society Research Lab은 온디바이스 AI와 디지털 인프라부터 AI 안전성·거버넌스까지, 인간과 AI가 공존하는 미래 사회의 조건을 장기 시계에서 연구하는 비영리 독립 연구소입니다." />
+  <meta name="author" content="Geunsik Lim (임근식)" />
+  <meta name="theme-color" content="#020617" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://leemgs.github.io/ai-society-lab/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="AI Society Research Lab" />
+  <meta property="og:title" content="AI Society Research Lab — 미래 AI 기반 사회 연구" />
+  <meta property="og:description" content="인간과 AI가 공존하는 미래 사회의 조건을 연구하는 비영리 독립 연구소." />
+  <meta property="og:url" content="https://leemgs.github.io/ai-society-lab/" />
+  <meta property="og:image" content="https://leemgs.github.io/ai-society-lab/assets/illustrations/ai-society-landscape.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
 <header class="site-header">
   <div class="container nav-container">
     <div class="logo">
@@ -19,40 +34,40 @@
         <span>Non-profit · Independent Research</span>
       </div>
     </div>
-    <nav class="nav">
-      <button class="nav-toggle" aria-label="메뉴 열기">
-        ☰
-      </button>
+    <nav class="nav" aria-label="주요 메뉴">
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
       <ul class="nav-links">
-        <li><a href="index.html" active>홈</a></li>
-        <li><a href="about.html" >연구소 소개</a></li>
-        <li><a href="research.html" >연구 &amp; 출판</a></li>
-        <li><a href="projects.html" >프로젝트</a></li>
-        <li><a href="contact.html" >연락처</a></li>
+        <li><a href="index.html" class="active">홈</a></li>
+        <li><a href="about.html">소개</a></li>
+        <li><a href="vision.html">비전</a></li>
+        <li><a href="research.html">연구 &amp; 출판</a></li>
+        <li><a href="projects.html">프로젝트</a></li>
+        <li><a href="contact.html">연락처</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main>
+<main id="main">
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="container hero-inner fade-in-up">
       <div class="hero-text">
-        <p class="hero-kicker">Non-Profit · AI · Society</p>
-        <h1>AI 기반 사회와 디지털 인프라를<br />장기 시계에서 연구합니다.</h1>
+        <p class="hero-kicker">Human-Centered · On-Device AI · Society</p>
+        <h1>인간과 AI가 공존하는<br />미래 사회의 조건을 연구합니다.</h1>
         <p class="hero-subtitle">
-          AI Society Research Lab은 생성형 AI가
-          <strong>사회와 디지털 인프라</strong>에 미치는 영향을 분석하고,
-          공익 관점의 리포트와 워킹페이퍼를 발행하는 비영리 1인 연구소입니다.
+          AI Society Research Lab은 <strong>온디바이스·엣지 AI</strong>와 이를 지탱하는
+          <strong>디지털 인프라</strong>에서 출발해, AI가 사회·경제·개인에 미치는 영향과
+          <strong>안전성·거버넌스</strong>까지 하나의 프레임으로 연구하는 비영리 독립 연구소입니다.
         </p>
         <div class="hero-actions">
-          <a href="research.html" class="btn primary">연구 &amp; 리포트 보기</a>
-          <a href="about.html" class="btn ghost">연구소 소개</a>
+          <a href="vision.html" class="btn primary">미래 사회 비전 보기</a>
+          <a href="research.html" class="btn ghost">연구 &amp; 리포트</a>
         </div>
-        <div class="hero-meta">
-          <span class="pill">AI 안전성 &amp; 자살 리스크</span>
-                    <span class="pill">NAND·HDD·GPU 인프라</span>
+        <div class="badge-row">
+          <span class="badge"><span class="dot"></span> 비영리 · 독립 연구</span>
+          <span class="badge"><span class="dot"></span> 온디바이스 AI</span>
+          <span class="badge"><span class="dot"></span> AI 안전성 &amp; 거버넌스</span>
         </div>
       </div>
       <div class="hero-panel float-up">
@@ -61,64 +76,189 @@
           <figcaption>기술과 사람, 인프라를 하나의 풍경으로 바라봅니다.</figcaption>
         </figure>
         <div class="hero-card">
-          <h2>최근 이슈 브리프 (샘플)</h2>
+          <h2>최근 연구 노트</h2>
           <ul class="brief-list">
             <li>
-              <span class="tag">Issue Brief 2025-01</span>
-              <p>챗봇과 자살 유도 리스크: 서비스 설계 상의 안전 공백</p>
+              <span class="tag">Issue Brief 2025</span>
+              <p>생성형 AI 챗봇과 자살 유도 리스크: 서비스 설계의 안전 공백</p>
             </li>
             <li>
               <span class="tag">Working Paper</span>
-              <p>AI 모델 규모·데이터 보존 정책이 인프라 수요에 미치는 영향</p>
+              <p>모델 규모·데이터 보존 정책이 NAND·HDD·GPU 인프라 수요에 미치는 영향</p>
+            </li>
+            <li>
+              <span class="tag">Concept</span>
+              <p>행동 중심 조기경보 체계: 공공·재난 영역의 AI 활용 설계</p>
             </li>
           </ul>
           <p class="hero-note">
-            실제 리포트가 준비되면 제목과 내용을 교체하고<br />
-            PDF 또는 GitHub 리포지토리 링크를 연결하세요.
+            연구가 공개되는 대로 <a class="pub-link" href="research.html">연구 &amp; 출판</a>
+            페이지에 리포트·데이터·코드를 연결합니다.
           </p>
         </div>
       </div>
     </div>
-    <div class="scroll-indicator">
+    <div class="scroll-indicator" aria-hidden="true">
       <span class="scroll-dot"></span>
       <span class="scroll-text">Scroll</span>
     </div>
   </section>
 
+  <!-- 미션 강조 -->
+  <section class="section">
+    <div class="container section-inner reveal">
+      <p class="eyebrow">Our Mission</p>
+      <p class="statement">
+        기술의 속도가 아니라 <span class="hl">사람과 사회가 감당할 수 있는 속도</span>로
+        AI를 설계할 수 있도록, 증거 기반의 공익 연구를 공개합니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- 연구소 한눈에 -->
   <section class="section section-alt">
-    <div class="container section-inner fade-in-up">
+    <div class="container section-inner reveal">
+      <p class="eyebrow">At a Glance</p>
       <h2 class="section-title">연구소 한눈에 보기</h2>
       <p class="section-lead">
-        AI Society Research Lab은 AI 기술이 만들어내는 사회적 영향과 디지털 인프라,
-        그리고 이를 지탱하는 디지털 인프라(NAND, HDD, GPU 등)를 한 프레임 안에서 바라보는
-        <strong>비영리 독립 연구소</strong>입니다.
+        AI Society Research Lab은 AI 기술과 이를 지탱하는 디지털 인프라(NAND·DRAM·HDD·GPU),
+        그리고 그로 인한 사회적 영향을 한 프레임 안에서 바라보는 <strong>비영리 독립 연구소</strong>입니다.
+      </p>
+      <div class="grid four-columns">
+        <div class="focus-card">
+          <div class="focus-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3a4 4 0 0 1 4 4v1a4 4 0 0 1 0 8v1a4 4 0 0 1-8 0v-1a4 4 0 0 1 0-8V7a4 4 0 0 1 4-4Z"/><path d="M12 8v8"/></svg>
+          </div>
+          <h3>AI 안전성 &amp; 위험</h3>
+          <p>자살 유도, 조작, 중독, 허위정보 등 생성형 AI가 초래하는 사회·개인 위험을 사례와 지표로 분석합니다.</p>
+        </div>
+        <div class="focus-card">
+          <div class="focus-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
+          </div>
+          <h3>온디바이스 · 엣지 AI</h3>
+          <p>클라우드에 의존하지 않고 기기에서 동작하는 AI가 프라이버시·접근성·지속가능성에 주는 의미를 연구합니다.</p>
+        </div>
+        <div class="focus-card">
+          <div class="focus-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 7c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3Z"/><path d="M4 7v10c0 1.7 3.6 3 8 3s8-1.3 8-3V7"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>
+          </div>
+          <h3>디지털 인프라 &amp; 경제</h3>
+          <p>AI가 NAND·DRAM·HDD·GPU 수요와 반도체·클라우드 산업, 비용 구조에 미치는 영향을 장기 시계에서 분석합니다.</p>
+        </div>
+        <div class="focus-card">
+          <div class="focus-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3>거버넌스 &amp; 공공</h3>
+          <p>AI 정책, 안전 기준, 재난·공공 영역에서의 책임 있는 AI 활용 방안을 설계하고 제안합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 통계 -->
+  <section class="section">
+    <div class="container section-inner reveal">
+      <div class="stats">
+        <div class="stat"><div class="num">4</div><div class="label">핵심 연구 축</div></div>
+        <div class="stat"><div class="num">100%</div><div class="label">비영리 · 독립 운영</div></div>
+        <div class="stat"><div class="num">Open</div><div class="label">데이터 · 코드 공개 지향</div></div>
+        <div class="stat"><div class="num">2035</div><div class="label">장기 비전 시계</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 미래 사회 비전 밴드 -->
+  <section class="section section-alt">
+    <div class="container section-inner reveal">
+      <p class="eyebrow">Toward 2035</p>
+      <h2 class="section-title">미래 AI 기반 사회를 준비하는 세 가지 질문</h2>
+      <p class="section-lead">
+        AI는 이미 사회 인프라가 되었습니다. 우리는 다음 10년을 준비하기 위해 세 가지 질문에 집중합니다.
       </p>
       <div class="grid three-columns">
         <div class="card hover-raise">
           <img class="card-illustration" src="assets/illustrations/safety-compass.svg" alt="위험 감지와 안전 설계를 연결하는 AI 안전 나침반 인포그래픽" loading="lazy" />
-          <div class="card-badge">01</div>
-          <h3>AI 사회적 위험 &amp; 안전성</h3>
-          <p>
-            자살 유도, 조작, 중독, 허위정보 등 생성형 AI 서비스가 초래하는
-            사회·개인 위험을 사례와 정량 지표로 분석합니다.
-          </p>
+          <div class="card-badge">Q1</div>
+          <h3>어떻게 안전하게?</h3>
+          <p>AI가 사람을 해치지 않도록, 위험을 사전에 발견하고 완화하는 설계 원칙과 안전 기준은 무엇인가.</p>
         </div>
         <div class="card hover-raise delay-1">
-          <img class="card-illustration" src="assets/illustrations/data-bridge.svg" alt="AI 모델과 사회 인프라 사이의 데이터 흐름을 보여주는 인포그래픽" loading="lazy" />
-          <div class="card-badge">02</div>
-          <h3>AI 사회적 위험 &amp; 인프라 변화</h3>
-          <p>
-            모델 크기, 학습 빈도, 데이터 보존 정책에 따른 인프라 수요와 사회적 영향을 연구합니다.
-          </p>
+          <img class="card-illustration" src="assets/illustrations/chip-ecosystem.svg" alt="GPU와 NAND, DRAM, HDD, 클라우드가 연결된 디지털 생태계 인포그래픽" loading="lazy" />
+          <div class="card-badge">Q2</div>
+          <h3>어떻게 지속가능하게?</h3>
+          <p>폭증하는 연산·저장·에너지 수요 속에서, 인프라를 지속가능하게 유지하는 길은 무엇인가.</p>
         </div>
         <div class="card hover-raise delay-2">
-          <img class="card-illustration" src="assets/illustrations/chip-ecosystem.svg" alt="GPU와 NAND, DRAM, HDD, 클라우드가 연결된 디지털 생태계 인포그래픽" loading="lazy" />
-          <div class="card-badge">03</div>
-          <h3>디지털 인프라 &amp; 경제 영향</h3>
+          <img class="card-illustration" src="assets/illustrations/data-bridge.svg" alt="AI 모델과 사회 인프라 사이의 데이터 흐름을 보여주는 인포그래픽" loading="lazy" />
+          <div class="card-badge">Q3</div>
+          <h3>어떻게 공정하게?</h3>
+          <p>AI의 혜택과 위험이 특정 집단에 쏠리지 않도록, 접근성과 책임을 어떻게 분배할 것인가.</p>
+        </div>
+      </div>
+      <div style="margin-top:1.8rem;">
+        <a href="vision.html" class="btn ghost">비전 &amp; 로드맵 자세히 보기 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 창립자 -->
+  <section class="section">
+    <div class="container section-inner reveal">
+      <p class="eyebrow">Founder</p>
+      <h2 class="section-title">창립자 &amp; 디렉터</h2>
+      <div class="founder">
+        <div class="founder-media">
+          <div class="founder-avatar" aria-hidden="true">GL</div>
+          <div class="fname">Geunsik Lim · 임근식, Ph.D.</div>
+          <div class="frole">Founder &amp; Director</div>
+          <div class="faffil">On-Device AI &amp; Systems Researcher</div>
+          <div class="founder-links">
+            <a href="https://github.com/leemgs" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/leemgs/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://huggingface.co/leemgs" target="_blank" rel="noopener">Hugging Face</a>
+          </div>
+        </div>
+        <div class="founder-body">
           <p>
-            AI가 NAND, DRAM, HDD, GPU 등 인프라 수요와 반도체·클라우드 산업,
-            비용 구조에 미치는 영향을 장기 시계에서 분석합니다.
+            AI Society Research Lab은 온디바이스 AI 시스템과 시스템 소프트웨어를 오랜 기간 연구해 온
+            <strong>임근식(Geunsik Lim) 박사</strong>가 설립한 비영리 독립 연구 이니셔티브입니다.
+            그는 신경망을 스트림 파이프라인의 필터로 다루는 온디바이스 AI 프레임워크
+            <strong>NNStreamer</strong>의 핵심 연구자로, 이 성과로 <em>Samsung Best Paper Award(2021)</em>를 수상했습니다.
           </p>
+          <p style="margin-top:0.9rem;">
+            휴대폰·태블릿·디지털 TV 등 임베디드 기기를 위한 저수준 시스템 소프트웨어를 개발해 왔으며,
+            Linux, Tizen, GStreamer 등 다양한 오픈소스 생태계에 기여해 왔습니다.
+            이 경험을 바탕으로, 기술과 사회를 함께 바라보는 공익 연구를 지향합니다.
+          </p>
+          <div class="tag-group">
+            <span class="chip">On-Device AI</span>
+            <span class="chip">NNStreamer</span>
+            <span class="chip">Embedded Systems</span>
+            <span class="chip">Open Source</span>
+            <span class="chip">AI &amp; Society</span>
+          </div>
+          <p style="margin-top:1.1rem;">
+            <a class="pub-link" href="about.html">연구소 소개 자세히 보기 →</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-alt">
+    <div class="container section-inner reveal">
+      <div class="cta-band">
+        <h2>함께 미래 AI 사회를 설계할 동료를 찾습니다</h2>
+        <p>
+          공동 연구, 자문, 세미나, 데이터·코드 공유 제안을 환영합니다.
+          상업적 이해관계와 독립적으로 운영되는 공익 연구에 함께해 주세요.
+        </p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn primary">협업 제안하기</a>
+          <a href="https://github.com/leemgs/ai-society-lab" target="_blank" rel="noopener" class="btn ghost">GitHub 저장소</a>
         </div>
       </div>
     </div>
@@ -126,25 +266,40 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <p>
-      © <span id="year"></span> AI Society Research Lab. All rights reserved.
-    </p>
-    <p class="small">
-      비영리 1인 연구소 · Built with HTML &amp; CSS · Hosted on GitHub Pages.
-    </p>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="assets/logo.svg" alt="AI Society Research Lab 로고" style="height:30px;" />
+        </div>
+        <p>
+          인간과 AI가 공존하는 미래 사회의 조건을 연구하는 비영리 독립 연구소.
+          모든 견해는 연구자 개인의 것이며 특정 기관·기업의 공식 입장이 아닙니다.
+        </p>
+      </div>
+      <div>
+        <h4>둘러보기</h4>
+        <a href="about.html">소개</a>
+        <a href="vision.html">비전</a>
+        <a href="research.html">연구 &amp; 출판</a>
+        <a href="projects.html">프로젝트</a>
+      </div>
+      <div>
+        <h4>연결</h4>
+        <a href="contact.html">연락처</a>
+        <a href="https://github.com/leemgs" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/leemgs/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://huggingface.co/leemgs" target="_blank" rel="noopener">Hugging Face</a>
+      </div>
+    </div>
+    <div class="footer-inner">
+      <p>© <span id="year"></span> AI Society Research Lab. All rights reserved.</p>
+      <p class="small">비영리 독립 연구소 · Built with HTML &amp; CSS · Hosted on GitHub Pages.</p>
+    </div>
   </div>
 </footer>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-  const navToggle = document.querySelector(".nav-toggle");
-  const navLinks = document.querySelector(".nav-links");
-  if (navToggle) {
-    navToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("nav-open");
-    });
-  }
-</script>
 
+<button class="to-top" aria-label="맨 위로 이동">↑</button>
+<script src="assets/main.js" defer></script>
 </body>
 </html>

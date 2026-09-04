@@ -3,11 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>연구 & 출판 · AI Society Research Lab</title>
-  <meta name="description" content="AI 기반 사회와 디지털 인프라를 연구하는 비영리 1인 연구소 웹사이트입니다.">
+  <title>연구 &amp; 출판 · AI Society Research Lab</title>
+  <meta name="description" content="AI 기반 사회에 대한 이슈 브리프, 워킹페이퍼, 연구 리포트를 정리하는 공개 아카이브입니다." />
+  <meta name="theme-color" content="#020617" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="연구 &amp; 출판 · AI Society Research Lab" />
+  <meta property="og:description" content="AI 기반 사회에 대한 이슈 브리프·워킹페이퍼·리포트 아카이브." />
+  <meta property="og:url" content="https://leemgs.github.io/ai-society-lab/research.html" />
+  <meta property="og:image" content="https://leemgs.github.io/ai-society-lab/assets/logo.svg" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
 <header class="site-header">
   <div class="container nav-container">
     <div class="logo">
@@ -19,68 +27,67 @@
         <span>Non-profit · Independent Research</span>
       </div>
     </div>
-    <nav class="nav">
-      <button class="nav-toggle" aria-label="메뉴 열기">
-        ☰
-      </button>
+    <nav class="nav" aria-label="주요 메뉴">
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
       <ul class="nav-links">
-        <li><a href="index.html" >홈</a></li>
-        <li><a href="about.html" >연구소 소개</a></li>
-        <li><a href="research.html" active>연구 &amp; 출판</a></li>
-        <li><a href="projects.html" >프로젝트</a></li>
-        <li><a href="contact.html" >연락처</a></li>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="about.html">소개</a></li>
+        <li><a href="vision.html">비전</a></li>
+        <li><a href="research.html" class="active">연구 &amp; 출판</a></li>
+        <li><a href="projects.html">프로젝트</a></li>
+        <li><a href="contact.html">연락처</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main>
+<main id="main">
   <section class="page-hero">
     <div class="container section-inner fade-in-up">
-      <div class="breadcrumb">
-        <a href="index.html">홈</a> · 연구 &amp; 출판
-      </div>
+      <div class="breadcrumb"><a href="index.html">홈</a> · 연구 &amp; 출판</div>
+      <p class="eyebrow">Research &amp; Publications</p>
       <h1>연구 &amp; 출판</h1>
       <div class="subtle-divider"></div>
       <p class="section-lead">
-        이 페이지는 AI 기반 사회에 대한 리포트, 워킹페이퍼, 학술 논문을 정리하는
-        비공식·공개 아카이브입니다. 실제 발행이 이뤄지면 연도·유형·제목·요약·링크를 업데이트하세요.
+        AI 기반 사회에 대한 이슈 브리프, 워킹페이퍼, 연구 리포트를 정리하는 공개 아카이브입니다.
+        발행이 이뤄지면 연도·유형·제목·요약과 함께 PDF 또는 저장소 링크를 연결합니다.
       </p>
     </div>
   </section>
 
   <section class="section section-alt">
-    <div class="container section-inner fade-in-up">
-      <h2 class="section-title">연구 축(Themes)</h2>
+    <div class="container section-inner reveal">
+      <h2 class="section-title">연구 축 (Themes)</h2>
       <p class="section-lead">
-        연구는 크게 네 개의 축으로 나뉩니다. 각 축은 리포트·정책 제안서·워킹페이퍼 형태로 연결됩니다.
+        연구는 크게 네 개의 축으로 나뉩니다. 각 축은 리포트·정책 제안서·워킹페이퍼로 이어집니다.
       </p>
       <div class="grid two-columns">
         <div class="card soft">
           <h3>A. AI 사회적 위험 &amp; 안전성</h3>
           <p>
             자살 유도, 자기파괴적 조언, 중독, 허위정보 등 생성형 AI가 야기할 수 있는
-            사회·개인 위험을 사례·데이터 기반으로 분석합니다.
+            사회·개인 위험을 사례·데이터 기반으로 분석하고 보호 설계를 제안합니다.
           </p>
         </div>
         <div class="card soft delay-1">
-          <h3>B. 데이터·인프라 &amp; 반도체 수요</h3>
+          <h3>B. 온디바이스 &amp; 엣지 AI</h3>
           <p>
-            모델 크기, 학습 빈도, 데이터 보존 정책에 따라 달라지는 인프라 수요를 시나리오별로 분석합니다.
+            클라우드에 의존하지 않고 기기에서 동작하는 AI가 프라이버시·지연·비용·접근성에
+            어떤 변화를 주는지, 그리고 그것이 사회에 여는 가능성을 연구합니다.
           </p>
         </div>
         <div class="card soft">
           <h3>C. 데이터·인프라 &amp; 반도체 수요</h3>
           <p>
             LLM·멀티모달 모델이 NAND, DRAM, HDD, GPU 등 디지털 인프라 수요와
-            반도체·클라우드 산업 구조에 미치는 변화를 분석합니다.
+            반도체·클라우드 산업 구조에 미치는 변화를 시나리오별로 분석합니다.
           </p>
         </div>
         <div class="card soft delay-1">
           <h3>D. 재난·공공 영역의 AI 활용</h3>
           <p>
-            기후·재난 조기경보(예: Climate RADAR와 유사한 개념), 공공 의사소통,
-            위험 커뮤니케이션에서 AI가 어떤 역할을 할 수 있는지 평가합니다.
+            기후·재난 조기경보, 공공 의사소통, 위험 커뮤니케이션에서 AI가 어떤 역할을
+            할 수 있는지 “행동 중심” 관점에서 평가합니다.
           </p>
         </div>
       </div>
@@ -88,103 +95,117 @@
   </section>
 
   <section class="section">
-    <div class="container section-inner fade-in-up">
-      <h2 class="section-title">논문 &amp; 연구 리포트 (샘플 구조)</h2>
+    <div class="container section-inner reveal">
+      <h2 class="section-title">이슈 브리프 · 리포트 · 워킹페이퍼</h2>
       <p class="section-lead">
-        아래는 예시 항목입니다. 실제 발행이 이루어지면 고유의 식별자(DOI, arXiv, SSRN 등)와 함께
-        제목·요약·링크를 기입해 사용하세요.
+        아래는 현재 준비 중이거나 초안 단계인 산출물입니다. 발행이 확정되면 고유 식별자(DOI, arXiv, SSRN 등)와
+        함께 정식 링크로 갱신됩니다.
       </p>
 
-      
-        <div class="pub-list">
-
-          <article class="pub-item hover-raise">
-            <div class="pub-header">
-              <div class="pub-meta">
-                <span class="pub-year">2025</span>
-                <span class="pub-type">Issue Brief</span>
-              </div>
-              <span class="pub-status status-published">발행 완료</span>
+      <div class="pub-list">
+        <article class="pub-item hover-raise">
+          <div class="pub-header">
+            <div class="pub-meta">
+              <span class="pub-year">2025</span>
+              <span class="pub-type">Issue Brief</span>
             </div>
-            <h3 class="pub-title">
-              생성형 AI 챗봇과 자살 유도 리스크 분석 및 보호 설계 가이드
-            </h3>
-            <p class="pub-abstract">
-              해외 플랫폼에서 보고된 자살 유도형 챗봇 사례 분석 결과를 바탕으로
-              서비스 안전 기준, 보호 조치 디자인 방향을 제시합니다.
-            </p>
-            <a class="pub-link" href="docs/IssueBrief_2025_Chatbot_Risk.pdf" target="_blank">
-              PDF 다운로드
-            </a>
-          </article>
+            <span class="pub-status status-published">발행 완료</span>
+          </div>
+          <h3 class="pub-title">생성형 AI 챗봇과 자살 유도 리스크 분석 및 보호 설계 가이드</h3>
+          <p class="pub-abstract">
+            해외 플랫폼에서 보고된 자살 유도형 챗봇 사례 분석을 바탕으로
+            서비스 안전 기준과 보호 조치 디자인 방향을 제시합니다.
+          </p>
+          <a class="pub-link" href="docs/IssueBrief_2025_Chatbot_Risk.pdf" target="_blank" rel="noopener">PDF 다운로드 →</a>
+        </article>
 
-          <article class="pub-item hover-raise delay-1">
-            <div class="pub-header">
-              <div class="pub-meta">
-                <span class="pub-year">2025</span>
-                <span class="pub-type">Research Report</span>
-              </div>
-              <span class="pub-status status-draft">Draft</span>
+        <article class="pub-item hover-raise delay-1">
+          <div class="pub-header">
+            <div class="pub-meta">
+              <span class="pub-year">2025</span>
+              <span class="pub-type">Research Report</span>
             </div>
-            <h3 class="pub-title">
-              LLM 모델 크기 증가에 따른 GPU·NAND·HDD 수요 시뮬레이션
-            </h3>
-            <p class="pub-abstract">
-              모델 크기, 학습 주기, 데이터 보존 정책을 변수로 설정하여
-              인프라 수요 변화를 시나리오 기반으로 분석합니다.
-            </p>
-            <a class="pub-link" href="docs/ResearchReport_2025_Template.docx" download>
-              (초안) Word 템플릿 다운로드
-            </a>
-          </article>
+            <span class="pub-status status-draft">Draft</span>
+          </div>
+          <h3 class="pub-title">LLM 모델 규모 증가에 따른 GPU·NAND·HDD 수요 시뮬레이션</h3>
+          <p class="pub-abstract">
+            모델 크기, 학습 주기, 데이터 보존 정책을 변수로 설정하여
+            인프라 수요 변화를 시나리오 기반으로 분석합니다.
+          </p>
+          <a class="pub-link" href="docs/ResearchReport_2025_Template.docx" download>초안(Word) 다운로드 →</a>
+        </article>
 
-          <article class="pub-item hover-raise delay-2">
-            <div class="pub-header">
-              <div class="pub-meta">
-                <span class="pub-year">2025</span>
-                <span class="pub-type">Working Paper</span>
-              </div>
-              <span class="pub-status status-draft">작성 중</span>
+        <article class="pub-item hover-raise delay-2">
+          <div class="pub-header">
+            <div class="pub-meta">
+              <span class="pub-year">2025</span>
+              <span class="pub-type">Working Paper</span>
             </div>
-            <h3 class="pub-title">
-              AI 기반 행동 중심 조기경보 체계 설계 개념
-            </h3>
-            <p class="pub-abstract">
-              기존 조기경보 시스템이 '알림 전달' 중심이었다면
-              본 개념은 '행동 실행' 중심 구조의 모델을 정의하고,
-              재난·위기 커뮤니케이션에서 AI의 역할을 탐색합니다.
-            </p>
-            <a class="pub-link" href="docs/WorkingPaper_NAND_ModelScaling.docx" download>
-              워킹페이퍼 초안 (Word) 다운로드
-            </a>
-          </article>
-
-        </div>
-
+            <span class="pub-status status-draft">작성 중</span>
+          </div>
+          <h3 class="pub-title">AI 기반 행동 중심 조기경보 체계 설계 개념</h3>
+          <p class="pub-abstract">
+            기존 조기경보가 ‘알림 전달’ 중심이었다면, 본 개념은 ‘행동 실행’ 중심 구조를 정의하고
+            재난·위기 커뮤니케이션에서 AI의 역할을 탐색합니다.
+          </p>
+          <a class="pub-link" href="docs/WorkingPaper_NAND_ModelScaling.docx" download>워킹페이퍼 초안(Word) 다운로드 →</a>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container section-inner reveal">
+      <div class="cta-band">
+        <h2>연구를 함께 검증하고 싶으신가요?</h2>
+        <p>
+          데이터·방법론에 대한 비평, 재현 시도, 공동 연구 제안을 환영합니다.
+          가능한 산출물은 GitHub 저장소를 통해 공개합니다.
+        </p>
+        <div class="cta-actions">
+          <a href="https://github.com/leemgs/ai-society-lab" target="_blank" rel="noopener" class="btn primary">GitHub 저장소</a>
+          <a href="contact.html" class="btn ghost">연락하기</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <p>
-      © <span id="year"></span> AI Society Research Lab. All rights reserved.
-    </p>
-    <p class="small">
-      비영리 1인 연구소 · Built with HTML &amp; CSS · Hosted on GitHub Pages.
-    </p>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="assets/logo.svg" alt="AI Society Research Lab 로고" style="height:30px;" />
+        </div>
+        <p>
+          인간과 AI가 공존하는 미래 사회의 조건을 연구하는 비영리 독립 연구소.
+          모든 견해는 연구자 개인의 것이며 특정 기관·기업의 공식 입장이 아닙니다.
+        </p>
+      </div>
+      <div>
+        <h4>둘러보기</h4>
+        <a href="about.html">소개</a>
+        <a href="vision.html">비전</a>
+        <a href="research.html">연구 &amp; 출판</a>
+        <a href="projects.html">프로젝트</a>
+      </div>
+      <div>
+        <h4>연결</h4>
+        <a href="contact.html">연락처</a>
+        <a href="https://github.com/leemgs" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/leemgs/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://huggingface.co/leemgs" target="_blank" rel="noopener">Hugging Face</a>
+      </div>
+    </div>
+    <div class="footer-inner">
+      <p>© <span id="year"></span> AI Society Research Lab. All rights reserved.</p>
+      <p class="small">비영리 독립 연구소 · Built with HTML &amp; CSS · Hosted on GitHub Pages.</p>
+    </div>
   </div>
 </footer>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-  const navToggle = document.querySelector(".nav-toggle");
-  const navLinks = document.querySelector(".nav-links");
-  if (navToggle) {
-    navToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("nav-open");
-    });
-  }
-</script>
 
+<button class="to-top" aria-label="맨 위로 이동">↑</button>
+<script src="assets/main.js" defer></script>
 </body>
 </html>
